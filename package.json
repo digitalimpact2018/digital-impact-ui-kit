@@ -1,0 +1,19 @@
+{
+  "name": "digital-impact-ui-kit",
+  "version": "0.1.0",
+  "description": "In house Digital Impact UI kit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalimpact2018/digital-impact-ui-kit.git"
+  },
+  "author": "Digital Impact <“services@digitalimpact.co.uk”> (https://www.digitalimpact.co.uk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitalimpact2018/digital-impact-ui-kit/issues"
+  },
+  "homepage": "https://github.com/digitalimpact2018/digital-impact-ui-kit#readme"
+}
