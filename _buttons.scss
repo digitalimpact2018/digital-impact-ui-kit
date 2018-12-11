@@ -1,0 +1,98 @@
+.button{
+	font-size: 17px;
+    padding: 15px 40px;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transform: perspective(1px) translateZ(0);
+
+        &:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $accent-dark;
+            border-radius: 100%;
+            transform: scale(0);
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+        }
+
+        &:hover{
+            color: #fff;
+
+            &:before{
+                transform: scale(2);
+            }
+        }
+
+        &:focus{
+            color: #fff;
+
+            &:before{
+                transform: scale(2);
+                color: $accent-darkest;
+            }
+        }
+
+    &__basic{
+    	color: #fff;
+    	background: $accent;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__rounded{
+    	border-radius: 4px;
+    }
+
+    &__full-rounded{
+    	border-radius: 50px;
+    }
+
+    &__ghost{
+    	color: $accent;
+    	background-color: transparent;
+    	border: 1px solid $accent;
+
+    	&:hover{
+    		background-color: $accent;
+    		color: #fff;
+    	}
+    }
+}
+
+
+.text--link{
+    color: $accent;
+    font-size: $body-font-size;
+
+    &:hover{
+        color: $accent;
+    }
+
+    &__background{
+        background-color: $accent-light;
+        padding: 5px 10px;
+        display: inline-block;
+
+        &:hover{
+            background-color: $accent-dark;
+            color: #fff;
+        }
+    }
+
+    &__underline{
+        border-bottom: 1px solid $accent;
+        padding-bottom: 2px;
+
+        &:hover{
+            padding-bottom: 5px;
+        }
+    }
+}

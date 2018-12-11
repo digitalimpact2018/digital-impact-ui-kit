@@ -1,0 +1,74 @@
+label{
+	@extend p;
+	display: block;
+}
+
+.sub__label{
+	@extend .sub-copy;
+	display: block;
+	margin-bottom: 10px;
+	color: $sub-label-copy-color;
+}
+
+input{
+	background: #FFFFFF;
+	border: 1px solid #DADADA;
+	border-radius: 3px;
+	color: $primary;
+	padding: 15px 20px;
+
+	&:focus{
+		border: 1px solid #515A67;
+	}	
+}
+
+select{
+	background: #FFFFFF;
+	border: 1px solid #DADADA;
+	border-radius: 3px;
+	color: $primary;
+	padding: 15px 20px;
+	appearance: none;
+	min-width: 210px;
+
+	&:focus{
+		border: 1px solid #515A67;
+	}
+}
+
+input[type=checkbox]{
+	appearance: none;
+	background: #fff;
+	height: 24px;
+	width: 24px;
+	border: 3px solid #DADADA;
+
+	&:checked{
+		background-color: $accent;
+		border: 3px solid $accent;
+	}
+
+	&:focus{
+		border: 3px solid $accent;
+	}
+}
+
+
+input[type=radio]{
+	appearance: none;
+	background: #fff;
+	border-radius: 50%;
+	height: 24px;
+	width: 24px;
+	border: 3px solid #DADADA;
+
+	&:checked{
+		background-color: $accent;
+		border: 3px solid $accent;
+		outline: 1px solid #fff;
+	}
+
+	&:focus{
+		border: 3px solid $accent;
+	}
+}
