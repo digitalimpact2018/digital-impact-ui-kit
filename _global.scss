@@ -8,12 +8,19 @@ html{
 	outline: 0;
 }
 
+
+
 a{
 	transition: all $transition-speed ease-in-out;
+	text-decoration: none;
 
 	&:hover{
 		text-decoration: none;
 	}
+}
+
+a:-webkit-any-link{
+	text-decoration: none;
 }
 
 h1,
