@@ -1,0 +1,180 @@
+<div class="content-single-post">
+
+	<div class="featured-image" style="background-image: url('https://images.pexels.com/photos/2069328/pexels-photo-2069328.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');"></div>
+
+
+	<div class="content-single-post__inner">
+
+		<div class="container">
+		
+			<div class="row">
+			
+				<div class="col-lg-3">
+					
+					<div class="content-single-post__inner__share">
+				
+						<i class="fas fa-share-alt"></i>
+
+				  		<p>
+				  			<span>S</span>
+				  			<span>h</span>
+				  			<span>a</span>
+				  			<span>r</span>
+				  			<span>e</span>
+				  		</p>
+
+				  		<a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>">
+				  			<i class="fab fa-facebook"></i>
+				  		</a>
+
+						<a href="https://twitter.com/home?status=<?php the_permalink(); ?>">
+				  			<i class="fab fa-twitter"></i>
+				  		</a>
+
+				  		<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=&summary=&source=">
+				  			<i class="fab fa-linkedin-in"></i>
+						</a>
+						
+
+					</div>
+
+				</div>
+
+				<div class="col-lg-9">
+					
+					<h1>Blog Post Title Here</h1>
+
+					<span class="meta">
+
+						<p>August 2000</p> 
+						
+						<p class="categories">News, Feature, Latest</p>
+
+					</span>
+
+					<hr>
+
+					<div class="share-link">
+
+						<div class="share-buttons">
+							
+							<p>Share this Post</p>
+							
+							<a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>">
+					  			<i class="fab fa-facebook"></i>
+					  		</a>
+							<a href="https://twitter.com/home?status=<?php the_permalink(); ?>">
+					  			<i class="fab fa-twitter"></i>
+					  		</a>
+
+					  		<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=&summary=&source=">
+					  			<i class="fab fa-linkedin-in"></i>
+							</a>
+
+						</div>
+
+						<input type="text" class="the-link" value="http://uikit.diagency.co.uk/">
+
+					</div>
+
+					<hr>
+					
+					<div class="content">
+					
+						<h2>Big Test Header</h2>
+
+						<p>Adipiscing tristique risus nec feugiat in. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Ultricies integer quis auctor elit sed vulputate mi sit amet. Blandit libero volutpat sed cras ornare arcu. Id faucibus nisl tincidunt eget nullam non nisi est sit. Urna condimentum mattis pellentesque id nibh tortor. Nullam vehicula ipsum a arcu cursus.</p>
+
+						<p>Id aliquet lectus proin nibh nisl condimentum id venenatis a. A lacus vestibulum sed arcu non odio. Id donec ultrices tincidunt arcu non. Eget lorem dolor sed viverra. Consequat id porta nibh venenatis.</p>
+
+						<p>Gravida neque convallis a cras semper auctor neque vitae tempus. Commodo ullamcorper a lacus vestibulum. Sapien nec sagittis aliquam malesuada bibendum. In massa tempor nec feugiat nisl. Mi eget mauris pharetra et. Varius vel pharetra vel turpis nunc.</p>
+
+						<h3>Big Test Header</h3>
+
+						<blockquote>Id aliquet lectus proin nibh nisl condimentum id venenatis a. A lacus vestibulum sed <span>Source</span></blockquote>
+
+						<img src="http://wordpress-162170-788198.cloudwaysapps.com/wp-content/uploads/2019/02/adult-app-developer-business-1181244.jpg" alt="" width="1440" height="757" class="alignnone size-full wp-image-10" />
+
+					</div>
+
+					<hr>
+
+					<div class="share-link">
+
+						<div class="share-buttons">
+							
+							<p>Share this Post</p>
+							
+							<a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>">
+					  			<i class="fab fa-facebook"></i>
+					  		</a>
+							<a href="https://twitter.com/home?status=<?php the_permalink(); ?>">
+					  			<i class="fab fa-twitter"></i>
+					  		</a>
+
+					  		<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=&summary=&source=">
+					  			<i class="fab fa-linkedin-in"></i>
+							</a>
+
+						</div>
+
+						<input type="text" class="the-link" value="http://uikit.diagency.co.uk/">
+
+					</div>
+
+					<hr>
+
+					<div class="authour">
+	
+						<img src="@asset('images/authour.png')" alt="Authour Alt Tag">
+
+						<div class="details">
+							<h6>Henrik Larsson</h6>
+							<p>August 2000</p>
+							<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+<div class="you-might-also-like">
+	
+	<h2 class="text--center">Similar Posts</h2>
+	
+	<div class="container">
+		<div class="you-might-also-like__inner" data-slick='<?php echo json_encode([
+			'slidesToShow' => 2, 
+			'autoplay' => true,
+			'autoplaySpeed' => 2000,
+			'dots' => true,
+			'arrows' => true,
+			'responsive' => [
+				'breakpoint' => 767,
+				'settings' => [
+						'slidesToShow' => 1,
+				]
+			]
+
+		]); ?>'>
+			
+			@include('partials.blog--card')
+			
+			@include('partials.blog--card')
+
+		</div>
+	</div>
+
+</div>
