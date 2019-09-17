@@ -1,0 +1,26 @@
+nav{
+
+	ul{
+
+		li{
+			margin-right: 20px;
+
+			@include media-breakpoint-down(lg){
+				margin-right: 10px;
+			}
+
+			&:last-child{
+				margin-right: 0px;
+			}
+
+			a{
+				
+				color: $grey;
+
+			}
+
+		}
+
+	}
+
+}
